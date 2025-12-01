@@ -9,6 +9,8 @@
 **Author:** Jerry John Thomas, Indian Institute of Technology Palakkad  
 **Paper:** [DeceptionNet.pdf](DeceptionNet.pdf)
 
+![architecture Diagram](./arch.jpg)
+
 ## Overview
 
 This is a cleaned up version of an internal private repo, for a public submission. DeceptionNet is a modular hybrid agent for social deduction games (Mafia/Werewolf) that combines:
@@ -28,7 +30,6 @@ Our key insight: **treating LLMs as frozen feature extractors** avoids training 
 
 ## Architecture
 
-![](./arch.jpg)
 ### Components
 
 1. **Listener** (Dual-mode)
