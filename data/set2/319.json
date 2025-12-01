@@ -1,0 +1,235 @@
+{
+  "judge": [
+    [
+      "00:00:01",
+      "Game Preparation - Judge - The game has started. Players, confirm your identities."
+    ],
+    [
+      "00:00:05",
+      "Day 1,Night - Judge - Night has fallen, werewolves please choose a target."
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Those who died last night are [6]"
+    ],
+    [
+      "00:08:10",
+      "Day 1,Daytime - Judge - [6] was voted out"
+    ],
+    [
+      "00:08:15",
+      "Day 1,Daytime - Judge - Starting from [6], please give the last words"
+    ],
+    [
+      "00:10:30",
+      "Day 2,Night - Judge - Night has fallen, special roles please act"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Those who died last night are [5]"
+    ],
+    [
+      "00:15:45",
+      "Day 2,Daytime - Judge - [1] was voted out"
+    ],
+    [
+      "00:17:45",
+      "End - Judge - Werewolves win"
+    ]
+  ],
+  "task": [
+    [
+      "00:00:05",
+      "Day 1, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:00:08",
+      "Day 1, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:00:10",
+      "Day 1, Night",
+      "Seer choose one player to inspect"
+    ],
+    [
+      "00:10:30",
+      "Day 2, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:10:35",
+      "Day 2, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:10:40",
+      "Day 2, Night",
+      "Seer choose one player to inspect"
+    ]
+  ],
+  "game_state": {
+    "roles": {
+      "1": "Villager",
+      "2": "Werewolf",
+      "3": "Seer",
+      "4": "Villager",
+      "5": "Villager",
+      "6": "Doctor"
+    },
+    "player_id": [
+      "syn_g319_p1",
+      "syn_g319_p2",
+      "syn_g319_p3",
+      "syn_g319_p4",
+      "syn_g319_p5",
+      "syn_g319_p6"
+    ],
+    "final": {
+      "1": "exiled",
+      "2": "in_game",
+      "3": "killed",
+      "4": "in_game",
+      "5": "in_game",
+      "6": "exiled"
+    },
+    "Game Result": "Werewolves Win",
+    "Day 1 Night": {
+      "Death Message": [
+        6
+      ],
+      "Werewolf": 6,
+      "Seer": 6,
+      "Witch antidote": -1
+    },
+    "Day 1 Daytime": {
+      "Voting Pattern": {
+        "1": "6",
+        "2": "6",
+        "3": "6",
+        "4": "6",
+        "5": "6",
+        "6": "6"
+      },
+      "Voting Result": 6
+    },
+    "Day 2 Night": {
+      "Death Message": [
+        5
+      ],
+      "Werewolf": 5,
+      "Seer": -1,
+      "Witch antidote": -1
+    },
+    "Day 2 Daytime": {
+      "Voting Pattern": {
+        "2": "1",
+        "4": "1",
+        "5": "1"
+      },
+      "Voting Result": 1
+    }
+  },
+  "task_time": {
+    "Day 1 Night - Werewolves act": [
+      5,
+      35
+    ],
+    "Day 1 Night - Doctor protects": [
+      8,
+      18
+    ],
+    "Day 1 Night - Seer inspects": [
+      10,
+      20
+    ],
+    "Day 1 Daytime - Debate": [
+      40,
+      450
+    ],
+    "Day 1 Daytime - Voting": [
+      450,
+      480
+    ],
+    "Day 2 Night - Werewolves act": [
+      630,
+      660
+    ],
+    "Day 2 Night - Doctor protects": [
+      660,
+      670
+    ],
+    "Day 2 Night - Seer inspects": [
+      670,
+      680
+    ],
+    "Day 2 Daytime - Debate": [
+      685,
+      930
+    ],
+    "Day 2 Daytime - Voting": [
+      930,
+      950
+    ]
+  },
+  "audio": {
+    "Day 1 Daytime - [1] is speaking": {
+      "duration": 29.2,
+      "rms": 0.027,
+      "text": "Quinn says Nova hesitated when pressed about the night events.",
+      "summary": "Quinn expresses distrust toward Nova.",
+      "format": "{\"claims\": [\"Nova feels off\"], \"accuses\": [\"Nova\"], \"defends\": [], \"tone\": \"concerned\"}"
+    },
+    "Day 1 Daytime - [2] is speaking": {
+      "duration": 20.2,
+      "rms": 0.026,
+      "text": "Nova says their calm tone should not be read as guilt.",
+      "summary": "Nova defends themselves from suspicion.",
+      "format": "{\"claims\": [\"Innocent\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"defensive\"}"
+    },
+    "Day 1 Daytime - [3] is speaking": {
+      "duration": 44.4,
+      "rms": 0.029,
+      "text": "Last night my vision showed Nova with werewolf energy.",
+      "summary": "Xander reveals as seer and claims Nova is a werewolf.",
+      "format": "{\"claims\": [\"Seer\", \"Nova is a werewolf\"], \"accuses\": [\"Nova\"], \"defends\": [], \"tone\": \"assertive\"}"
+    },
+    "Day 1 Daytime - [6] is speaking": {
+      "duration": 33.8,
+      "rms": 0.03,
+      "text": "Trust me, I patched up Quinn after a clear attack. We should coordinate our votes.",
+      "summary": "Zephyr claims to be the medic and says they protected Quinn.",
+      "format": "{\"claims\": [\"Doctor\", \"Protected Quinn\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"earnest\"}"
+    },
+    "Day 2 Daytime - [2] is speaking": {
+      "duration": 23.5,
+      "rms": 0.028,
+      "text": "Look at Kestrel. The night kill gave them exactly what they wanted.",
+      "summary": "Nova shifts suspicion toward Kestrel.",
+      "format": "{\"claims\": [\"Kestrel benefited\"], \"accuses\": [\"Kestrel\"], \"defends\": [\"Self\"], \"tone\": \"calculating\"}"
+    },
+    "Day 2 Daytime - [5] is speaking": {
+      "duration": 22.7,
+      "rms": 0.031,
+      "text": "We need to resolve Quinn today before momentum swings.",
+      "summary": "Kestrel pushes to eliminate Quinn.",
+      "format": "{\"claims\": [\"Stay focused\"], \"accuses\": [\"Quinn\"], \"defends\": [], \"tone\": \"resolute\"}"
+    }
+  },
+  "video": {
+    "time": 950.0,
+    "fps": 10.0,
+    "width": 720,
+    "height": 1280
+  },
+  "origin": "synthetic_chatgpt_game319.json"
+}

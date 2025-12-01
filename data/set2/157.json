@@ -1,0 +1,234 @@
+{
+  "judge": [
+    [
+      "00:00:01",
+      "Game Preparation - Judge - The game has started. Players, confirm your identities."
+    ],
+    [
+      "00:00:05",
+      "Day 1,Night - Judge - Night has fallen, werewolves please choose a target."
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Those who died last night are [6]"
+    ],
+    [
+      "00:08:10",
+      "Day 1,Daytime - Judge - [2] was voted out"
+    ],
+    [
+      "00:08:15",
+      "Day 1,Daytime - Judge - Starting from [2], please give the last words"
+    ],
+    [
+      "00:10:30",
+      "Day 2,Night - Judge - Night has fallen, special roles please act"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Those who died last night are [1]"
+    ],
+    [
+      "00:15:45",
+      "Day 2,Daytime - Judge - [4] was voted out"
+    ],
+    [
+      "00:17:45",
+      "End - Judge - Congratulations villagers, the werewolves have been eliminated"
+    ]
+  ],
+  "task": [
+    [
+      "00:00:05",
+      "Day 1, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:00:08",
+      "Day 1, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:00:10",
+      "Day 1, Night",
+      "Seer choose one player to inspect"
+    ],
+    [
+      "00:10:30",
+      "Day 2, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:10:35",
+      "Day 2, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:10:40",
+      "Day 2, Night",
+      "Seer choose one player to inspect"
+    ]
+  ],
+  "game_state": {
+    "roles": {
+      "1": "Villager",
+      "2": "Werewolf",
+      "3": "Seer",
+      "4": "Villager",
+      "5": "Villager",
+      "6": "Doctor"
+    },
+    "player_id": [
+      "syn_g157_p1",
+      "syn_g157_p2",
+      "syn_g157_p3",
+      "syn_g157_p4",
+      "syn_g157_p5",
+      "syn_g157_p6"
+    ],
+    "final": {
+      "1": "killed",
+      "2": "exiled",
+      "3": "in_game",
+      "4": "in_game",
+      "6": "killed"
+    },
+    "Game Result": "The good side wins",
+    "Day 1 Night": {
+      "Death Message": [
+        6
+      ],
+      "Werewolf": 6,
+      "Seer": 2,
+      "Witch antidote": -1
+    },
+    "Day 1 Daytime": {
+      "Voting Pattern": {
+        "1": "2",
+        "2": "6",
+        "3": "2",
+        "4": "2",
+        "5": "2",
+        "6": "2"
+      },
+      "Voting Result": 2
+    },
+    "Day 2 Night": {
+      "Death Message": [
+        1
+      ],
+      "Werewolf": 1,
+      "Seer": -1,
+      "Witch antidote": -1
+    },
+    "Day 2 Daytime": {
+      "Voting Pattern": {
+        "3": "6",
+        "4": "4",
+        "5": "4"
+      },
+      "Voting Result": 4
+    }
+  },
+  "task_time": {
+    "Day 1 Night - Werewolves act": [
+      5,
+      35
+    ],
+    "Day 1 Night - Doctor protects": [
+      8,
+      18
+    ],
+    "Day 1 Night - Seer inspects": [
+      10,
+      20
+    ],
+    "Day 1 Daytime - Debate": [
+      40,
+      450
+    ],
+    "Day 1 Daytime - Voting": [
+      450,
+      480
+    ],
+    "Day 2 Night - Werewolves act": [
+      630,
+      660
+    ],
+    "Day 2 Night - Doctor protects": [
+      660,
+      670
+    ],
+    "Day 2 Night - Seer inspects": [
+      670,
+      680
+    ],
+    "Day 2 Daytime - Debate": [
+      685,
+      930
+    ],
+    "Day 2 Daytime - Voting": [
+      930,
+      950
+    ]
+  },
+  "audio": {
+    "Day 1 Daytime - [1] is speaking": {
+      "duration": 44.3,
+      "rms": 0.025,
+      "text": "Hazel says Yarrow hesitated when pressed about the night events.",
+      "summary": "Hazel expresses distrust toward Yarrow.",
+      "format": "{\"claims\": [\"Yarrow feels off\"], \"accuses\": [\"Yarrow\"], \"defends\": [], \"tone\": \"concerned\"}"
+    },
+    "Day 1 Daytime - [2] is speaking": {
+      "duration": 25.6,
+      "rms": 0.026,
+      "text": "Yarrow reminds everyone they revealed a useful clue earlier.",
+      "summary": "Yarrow defends themselves from suspicion.",
+      "format": "{\"claims\": [\"Innocent\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"defensive\"}"
+    },
+    "Day 1 Daytime - [3] is speaking": {
+      "duration": 31.7,
+      "rms": 0.03,
+      "text": "I am the seer. I checked Yarrow and saw a crimson aura.",
+      "summary": "Bishop reveals as seer and claims Yarrow is a werewolf.",
+      "format": "{\"claims\": [\"Seer\", \"Yarrow is a werewolf\"], \"accuses\": [\"Yarrow\"], \"defends\": [], \"tone\": \"assertive\"}"
+    },
+    "Day 1 Daytime - [6] is speaking": {
+      "duration": 31.3,
+      "rms": 0.026,
+      "text": "I am the medic. I shielded Bishop last night. We should coordinate our votes.",
+      "summary": "Edison claims to be the medic and says they protected Bishop.",
+      "format": "{\"claims\": [\"Doctor\", \"Protected Bishop\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"earnest\"}"
+    },
+    "Day 2 Daytime - [3] is speaking": {
+      "duration": 34.1,
+      "rms": 0.024,
+      "text": "I survived an attack. Watch Amber and Yarrow.",
+      "summary": "Bishop warns that players Amber and Yarrow remain suspicious.",
+      "format": "{\"claims\": [\"Attacked at night\"], \"accuses\": [\"Amber\", \"Yarrow\"], \"defends\": [\"Self\"], \"tone\": \"urgent\"}"
+    },
+    "Day 2 Daytime - [5] is speaking": {
+      "duration": 24.7,
+      "rms": 0.026,
+      "text": "We need to resolve Pax today before momentum swings.",
+      "summary": "Amber pushes to eliminate Pax.",
+      "format": "{\"claims\": [\"Stay focused\"], \"accuses\": [\"Pax\"], \"defends\": [], \"tone\": \"resolute\"}"
+    }
+  },
+  "video": {
+    "time": 950.0,
+    "fps": 10.0,
+    "width": 720,
+    "height": 1280
+  },
+  "origin": "synthetic_chatgpt_game157.json"
+}

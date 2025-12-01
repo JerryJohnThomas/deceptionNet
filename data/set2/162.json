@@ -1,0 +1,235 @@
+{
+  "judge": [
+    [
+      "00:00:01",
+      "Game Preparation - Judge - The game has started. Players, confirm your identities."
+    ],
+    [
+      "00:00:05",
+      "Day 1,Night - Judge - Night has fallen, werewolves please choose a target."
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Those who died last night are [5]"
+    ],
+    [
+      "00:08:10",
+      "Day 1,Daytime - Judge - [6] was voted out"
+    ],
+    [
+      "00:08:15",
+      "Day 1,Daytime - Judge - Starting from [6], please give the last words"
+    ],
+    [
+      "00:10:30",
+      "Day 2,Night - Judge - Night has fallen, special roles please act"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Those who died last night are [6]"
+    ],
+    [
+      "00:15:45",
+      "Day 2,Daytime - Judge - [1] was voted out"
+    ],
+    [
+      "00:17:45",
+      "End - Judge - Werewolves win"
+    ]
+  ],
+  "task": [
+    [
+      "00:00:05",
+      "Day 1, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:00:08",
+      "Day 1, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:00:10",
+      "Day 1, Night",
+      "Seer choose one player to inspect"
+    ],
+    [
+      "00:10:30",
+      "Day 2, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:10:35",
+      "Day 2, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:10:40",
+      "Day 2, Night",
+      "Seer choose one player to inspect"
+    ]
+  ],
+  "game_state": {
+    "roles": {
+      "1": "Villager",
+      "2": "Werewolf",
+      "3": "Seer",
+      "4": "Villager",
+      "5": "Villager",
+      "6": "Doctor"
+    },
+    "player_id": [
+      "syn_g162_p1",
+      "syn_g162_p2",
+      "syn_g162_p3",
+      "syn_g162_p4",
+      "syn_g162_p5",
+      "syn_g162_p6"
+    ],
+    "final": {
+      "1": "exiled",
+      "2": "in_game",
+      "3": "killed",
+      "4": "in_game",
+      "5": "in_game",
+      "6": "exiled"
+    },
+    "Game Result": "Werewolves Win",
+    "Day 1 Night": {
+      "Death Message": [
+        5
+      ],
+      "Werewolf": 5,
+      "Seer": 6,
+      "Witch antidote": -1
+    },
+    "Day 1 Daytime": {
+      "Voting Pattern": {
+        "1": "6",
+        "2": "6",
+        "3": "6",
+        "4": "6",
+        "5": "6",
+        "6": "6"
+      },
+      "Voting Result": 6
+    },
+    "Day 2 Night": {
+      "Death Message": [
+        6
+      ],
+      "Werewolf": 6,
+      "Seer": -1,
+      "Witch antidote": -1
+    },
+    "Day 2 Daytime": {
+      "Voting Pattern": {
+        "2": "1",
+        "4": "1",
+        "5": "1"
+      },
+      "Voting Result": 1
+    }
+  },
+  "task_time": {
+    "Day 1 Night - Werewolves act": [
+      5,
+      35
+    ],
+    "Day 1 Night - Doctor protects": [
+      8,
+      18
+    ],
+    "Day 1 Night - Seer inspects": [
+      10,
+      20
+    ],
+    "Day 1 Daytime - Debate": [
+      40,
+      450
+    ],
+    "Day 1 Daytime - Voting": [
+      450,
+      480
+    ],
+    "Day 2 Night - Werewolves act": [
+      630,
+      660
+    ],
+    "Day 2 Night - Doctor protects": [
+      660,
+      670
+    ],
+    "Day 2 Night - Seer inspects": [
+      670,
+      680
+    ],
+    "Day 2 Daytime - Debate": [
+      685,
+      930
+    ],
+    "Day 2 Daytime - Voting": [
+      930,
+      950
+    ]
+  },
+  "audio": {
+    "Day 1 Daytime - [1] is speaking": {
+      "duration": 23.8,
+      "rms": 0.027,
+      "text": "Nova says Gale hesitated when pressed about the night events.",
+      "summary": "Nova expresses distrust toward Gale.",
+      "format": "{\"claims\": [\"Gale feels off\"], \"accuses\": [\"Gale\"], \"defends\": [], \"tone\": \"concerned\"}"
+    },
+    "Day 1 Daytime - [2] is speaking": {
+      "duration": 39.0,
+      "rms": 0.035,
+      "text": "Gale stresses they pushed the village toward a correct vote yesterday.",
+      "summary": "Gale defends themselves from suspicion.",
+      "format": "{\"claims\": [\"Innocent\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"defensive\"}"
+    },
+    "Day 1 Daytime - [3] is speaking": {
+      "duration": 23.5,
+      "rms": 0.031,
+      "text": "I am the seer. I checked Gale and saw a crimson aura.",
+      "summary": "Olive reveals as seer and claims Gale is a werewolf.",
+      "format": "{\"claims\": [\"Seer\", \"Gale is a werewolf\"], \"accuses\": [\"Gale\"], \"defends\": [], \"tone\": \"assertive\"}"
+    },
+    "Day 1 Daytime - [6] is speaking": {
+      "duration": 38.2,
+      "rms": 0.027,
+      "text": "Medic here. My protection went on Olive; it felt like the wolves struck there. We should coordinate our votes.",
+      "summary": "Umber claims to be the medic and says they protected Olive.",
+      "format": "{\"claims\": [\"Doctor\", \"Protected Olive\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"earnest\"}"
+    },
+    "Day 2 Daytime - [2] is speaking": {
+      "duration": 28.8,
+      "rms": 0.025,
+      "text": "Look at Willow. The night kill gave them exactly what they wanted.",
+      "summary": "Gale shifts suspicion toward Willow.",
+      "format": "{\"claims\": [\"Willow benefited\"], \"accuses\": [\"Willow\"], \"defends\": [\"Self\"], \"tone\": \"calculating\"}"
+    },
+    "Day 2 Daytime - [5] is speaking": {
+      "duration": 22.0,
+      "rms": 0.028,
+      "text": "We need to resolve Nova today before momentum swings.",
+      "summary": "Willow pushes to eliminate Nova.",
+      "format": "{\"claims\": [\"Stay focused\"], \"accuses\": [\"Nova\"], \"defends\": [], \"tone\": \"resolute\"}"
+    }
+  },
+  "video": {
+    "time": 950.0,
+    "fps": 10.0,
+    "width": 720,
+    "height": 1280
+  },
+  "origin": "synthetic_chatgpt_game162.json"
+}

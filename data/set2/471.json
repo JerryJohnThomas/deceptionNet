@@ -1,0 +1,235 @@
+{
+  "judge": [
+    [
+      "00:00:01",
+      "Game Preparation - Judge - The game has started. Players, confirm your identities."
+    ],
+    [
+      "00:00:05",
+      "Day 1,Night - Judge - Night has fallen, werewolves please choose a target."
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Those who died last night are [6]"
+    ],
+    [
+      "00:08:10",
+      "Day 1,Daytime - Judge - [6] was voted out"
+    ],
+    [
+      "00:08:15",
+      "Day 1,Daytime - Judge - Starting from [6], please give the last words"
+    ],
+    [
+      "00:10:30",
+      "Day 2,Night - Judge - Night has fallen, special roles please act"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Those who died last night are [4]"
+    ],
+    [
+      "00:15:45",
+      "Day 2,Daytime - Judge - [1] was voted out"
+    ],
+    [
+      "00:17:45",
+      "End - Judge - Werewolves win"
+    ]
+  ],
+  "task": [
+    [
+      "00:00:05",
+      "Day 1, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:00:08",
+      "Day 1, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:00:10",
+      "Day 1, Night",
+      "Seer choose one player to inspect"
+    ],
+    [
+      "00:10:30",
+      "Day 2, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:10:35",
+      "Day 2, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:10:40",
+      "Day 2, Night",
+      "Seer choose one player to inspect"
+    ]
+  ],
+  "game_state": {
+    "roles": {
+      "1": "Villager",
+      "2": "Werewolf",
+      "3": "Seer",
+      "4": "Villager",
+      "5": "Villager",
+      "6": "Doctor"
+    },
+    "player_id": [
+      "syn_g471_p1",
+      "syn_g471_p2",
+      "syn_g471_p3",
+      "syn_g471_p4",
+      "syn_g471_p5",
+      "syn_g471_p6"
+    ],
+    "final": {
+      "1": "exiled",
+      "2": "in_game",
+      "3": "killed",
+      "4": "in_game",
+      "5": "in_game",
+      "6": "exiled"
+    },
+    "Game Result": "Werewolves Win",
+    "Day 1 Night": {
+      "Death Message": [
+        6
+      ],
+      "Werewolf": 6,
+      "Seer": 6,
+      "Witch antidote": -1
+    },
+    "Day 1 Daytime": {
+      "Voting Pattern": {
+        "1": "6",
+        "2": "4",
+        "3": "6",
+        "4": "6",
+        "5": "6",
+        "6": "6"
+      },
+      "Voting Result": 6
+    },
+    "Day 2 Night": {
+      "Death Message": [
+        4
+      ],
+      "Werewolf": 4,
+      "Seer": -1,
+      "Witch antidote": -1
+    },
+    "Day 2 Daytime": {
+      "Voting Pattern": {
+        "2": "1",
+        "4": "1",
+        "5": "1"
+      },
+      "Voting Result": 1
+    }
+  },
+  "task_time": {
+    "Day 1 Night - Werewolves act": [
+      5,
+      35
+    ],
+    "Day 1 Night - Doctor protects": [
+      8,
+      18
+    ],
+    "Day 1 Night - Seer inspects": [
+      10,
+      20
+    ],
+    "Day 1 Daytime - Debate": [
+      40,
+      450
+    ],
+    "Day 1 Daytime - Voting": [
+      450,
+      480
+    ],
+    "Day 2 Night - Werewolves act": [
+      630,
+      660
+    ],
+    "Day 2 Night - Doctor protects": [
+      660,
+      670
+    ],
+    "Day 2 Night - Seer inspects": [
+      670,
+      680
+    ],
+    "Day 2 Daytime - Debate": [
+      685,
+      930
+    ],
+    "Day 2 Daytime - Voting": [
+      930,
+      950
+    ]
+  },
+  "audio": {
+    "Day 1 Daytime - [1] is speaking": {
+      "duration": 39.2,
+      "rms": 0.031,
+      "text": "Edison believes Dawn keeps steering the talk away from real leads.",
+      "summary": "Edison expresses distrust toward Dawn.",
+      "format": "{\"claims\": [\"Dawn feels off\"], \"accuses\": [\"Dawn\"], \"defends\": [], \"tone\": \"concerned\"}"
+    },
+    "Day 1 Daytime - [2] is speaking": {
+      "duration": 30.4,
+      "rms": 0.026,
+      "text": "Dawn stresses they pushed the village toward a correct vote yesterday.",
+      "summary": "Dawn defends themselves from suspicion.",
+      "format": "{\"claims\": [\"Innocent\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"defensive\"}"
+    },
+    "Day 1 Daytime - [3] is speaking": {
+      "duration": 33.6,
+      "rms": 0.028,
+      "text": "Claiming seer: Dawn did not ping as a villager when I scanned them.",
+      "summary": "Amber reveals as seer and claims Dawn is a werewolf.",
+      "format": "{\"claims\": [\"Seer\", \"Dawn is a werewolf\"], \"accuses\": [\"Dawn\"], \"defends\": [], \"tone\": \"assertive\"}"
+    },
+    "Day 1 Daytime - [6] is speaking": {
+      "duration": 28.3,
+      "rms": 0.028,
+      "text": "Trust me, I patched up Edison after a clear attack. We should coordinate our votes.",
+      "summary": "Zephyr claims to be the medic and says they protected Edison.",
+      "format": "{\"claims\": [\"Doctor\", \"Protected Edison\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"earnest\"}"
+    },
+    "Day 2 Daytime - [2] is speaking": {
+      "duration": 23.4,
+      "rms": 0.025,
+      "text": "Look at Marble. The night kill gave them exactly what they wanted.",
+      "summary": "Dawn shifts suspicion toward Marble.",
+      "format": "{\"claims\": [\"Marble benefited\"], \"accuses\": [\"Marble\"], \"defends\": [\"Self\"], \"tone\": \"calculating\"}"
+    },
+    "Day 2 Daytime - [5] is speaking": {
+      "duration": 24.5,
+      "rms": 0.034,
+      "text": "We need to resolve Edison today before momentum swings.",
+      "summary": "Marble pushes to eliminate Edison.",
+      "format": "{\"claims\": [\"Stay focused\"], \"accuses\": [\"Edison\"], \"defends\": [], \"tone\": \"resolute\"}"
+    }
+  },
+  "video": {
+    "time": 950.0,
+    "fps": 10.0,
+    "width": 720,
+    "height": 1280
+  },
+  "origin": "synthetic_chatgpt_game471.json"
+}

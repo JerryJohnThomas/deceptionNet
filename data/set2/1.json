@@ -1,0 +1,219 @@
+{
+  "judge": [
+    [
+      "00:00:01",
+      "Game Preparation - Judge - The game has started. Players, confirm your identities."
+    ],
+    [
+      "00:00:05",
+      "Day 1,Night - Judge - Night has fallen, werewolves please choose a target."
+    ],
+    [
+      "00:00:45",
+      "Day 1,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:00:45",
+      "Day 1,Daytime - Judge - No one died during the night"
+    ],
+    [
+      "00:09:30",
+      "Day 1,Daytime - Judge - [2] was voted out"
+    ],
+    [
+      "00:09:35",
+      "Day 1,Daytime - Judge - Starting from [2], please give the last words"
+    ],
+    [
+      "00:11:00",
+      "Day 2,Night - Judge - Night has fallen, special roles please act"
+    ],
+    [
+      "00:11:50",
+      "Day 2,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:11:50",
+      "Day 2,Daytime - Judge - Those who died last night are [5]"
+    ],
+    [
+      "00:16:20",
+      "Day 2,Daytime - Judge - [3] was voted out"
+    ],
+    [
+      "00:16:25",
+      "End - Judge - Congratulations villagers, the werewolves have been eliminated"
+    ]
+  ],
+  "task": [
+    [
+      "00:00:05",
+      "Day 1, Night",
+      "Werewolves discuss quietly and choose a victim"
+    ],
+    [
+      "00:00:10",
+      "Day 1, Night",
+      "Seer, choose one player to investigate"
+    ],
+    [
+      "00:10:40",
+      "Day 2, Night",
+      "Werewolves discuss and choose a victim"
+    ],
+    [
+      "00:10:45",
+      "Day 2, Night",
+      "Medic, choose one player to protect"
+    ],
+    [
+      "00:10:50",
+      "Day 2, Night",
+      "Seer, choose one player to investigate"
+    ]
+  ],
+  "game_state": {
+    "roles": {
+      "1": "Villager",
+      "2": "Werewolf",
+      "3": "Seer",
+      "4": "Villager",
+      "5": "Villager",
+      "6": "Villager"
+    },
+    "player_id": [
+      "plr_1_elm",
+      "plr_2_wlf",
+      "plr_3_seer",
+      "plr_4_story",
+      "plr_5_guard",
+      "plr_6_bard"
+    ],
+    "final": {
+      "1": "in_game",
+      "2": "exiled",
+      "3": "exiled",
+      "4": "in_game",
+      "5": "killed",
+      "6": "in_game"
+    },
+    "Game Result": "The good side wins",
+    "Day 1 Night": {
+      "Death Message": [],
+      "Werewolf": -1,
+      "Seer": 2,
+      "Witch antidote": -1
+    },
+    "Day 1 Daytime": {
+      "Voting Pattern": {
+        "1": 2,
+        "2": 4,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "6": 2
+      },
+      "Voting Result": 2
+    },
+    "Day 2 Night": {
+      "Death Message": [
+        5
+      ],
+      "Werewolf": 5,
+      "Seer": 6,
+      "Witch antidote": -1
+    },
+    "Day 2 Daytime": {
+      "Voting Pattern": {
+        "1": 3,
+        "3": 6,
+        "4": 3,
+        "5": 3,
+        "6": 3
+      },
+      "Voting Result": 3
+    }
+  },
+  "task_time": {
+    "Day 1 Night - Werewolves discuss": [
+      5,
+      45
+    ],
+    "Day 1 Night - Seer investigates": [
+      10,
+      20
+    ],
+    "Day 1 Daytime - Debate": [
+      45,
+      600
+    ],
+    "Day 1 Daytime - Voting": [
+      600,
+      620
+    ],
+    "Day 2 Night - Werewolves discuss": [
+      660,
+      700
+    ],
+    "Day 2 Night - Medic protects": [
+      700,
+      710
+    ],
+    "Day 2 Night - Seer investigates": [
+      710,
+      720
+    ],
+    "Day 2 Daytime - Debate": [
+      720,
+      960
+    ],
+    "Day 2 Daytime - Voting": [
+      960,
+      980
+    ]
+  },
+  "audio": {
+    "Day 1 Daytime - [1] is speaking": {
+      "duration": 38.2,
+      "rms": 0.031,
+      "text": "I woke up alive, so the medic probably chose well. Player two kept quiet all night and it worries me.",
+      "summary": "Player 1 suspects player 2 due to silence and thanks the medic for keeping everyone safe the first night.",
+      "format": "{\"claims\":[\"Player2 feels suspiciously quiet\"], \"accuses\":[\"Player2\"], \"defends\":[], \"tone\":\"concerned\"}"
+    },
+    "Day 1 Daytime - [2] is speaking": {
+      "duration": 22.5,
+      "rms": 0.028,
+      "text": "I was quiet because I didn't hear any useful leads. Throwing shade at me just because I'm calm is reckless.",
+      "summary": "Player 2 deflects suspicion and calls the accusation emotional.",
+      "format": "{\"claims\":[\"Silence is not guilt\"], \"accuses\":[], \"defends\":[\"Self\"], \"tone\":\"defensive\"}"
+    },
+    "Day 1 Daytime - [3] is speaking": {
+      "duration": 41.0,
+      "rms": 0.03,
+      "text": "I am the seer. I checked player two last night and saw a red aura. Vote them out and we protect the village.",
+      "summary": "Player 3 reveals as seer and claims player 2 is a werewolf.",
+      "format": "{\"claims\":[\"Seer\", \"Player2 is a werewolf\"], \"accuses\":[\"Player2\"], \"defends\":[], \"tone\":\"assertive\"}"
+    },
+    "Day 2 Daytime - [4] is speaking": {
+      "duration": 33.7,
+      "rms": 0.027,
+      "text": "The werewolf struck back at player five. We should trust the seer's read and remove player three who might be compromised now.",
+      "summary": "Player 4 wants to continue trusting the seer and eliminate player 3 after player 5's death.",
+      "format": "{\"claims\":[\"Follow seer plan\"], \"accuses\":[\"Player3\"], \"defends\":[], \"tone\":\"resolute\"}"
+    },
+    "Day 2 Daytime - [3] is speaking": {
+      "duration": 29.4,
+      "rms": 0.029,
+      "text": "Hold on, I was attacked during the night but survived thanks to the medic. Player six is actually a gray read to me.",
+      "summary": "Player 3 claims the medic saved them and shifts suspicion toward player 6.",
+      "format": "{\"claims\":[\"Medic saved me\"], \"accuses\":[\"Player6\"], \"defends\":[\"Self\"], \"tone\":\"urgent\"}"
+    }
+  },
+  "video": {
+    "time": 980.0,
+    "fps": 10.0,
+    "width": 720,
+    "height": 1280
+  },
+  "origin": "synthetic_chatgpt_game1.json"
+}

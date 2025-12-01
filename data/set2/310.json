@@ -1,0 +1,234 @@
+{
+  "judge": [
+    [
+      "00:00:01",
+      "Game Preparation - Judge - The game has started. Players, confirm your identities."
+    ],
+    [
+      "00:00:05",
+      "Day 1,Night - Judge - Night has fallen, werewolves please choose a target."
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Those who died last night are [1]"
+    ],
+    [
+      "00:08:10",
+      "Day 1,Daytime - Judge - [2] was voted out"
+    ],
+    [
+      "00:08:15",
+      "Day 1,Daytime - Judge - Starting from [2], please give the last words"
+    ],
+    [
+      "00:10:30",
+      "Day 2,Night - Judge - Night has fallen, special roles please act"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Those who died last night are [6]"
+    ],
+    [
+      "00:15:45",
+      "Day 2,Daytime - Judge - [4] was voted out"
+    ],
+    [
+      "00:17:45",
+      "End - Judge - Congratulations villagers, the werewolves have been eliminated"
+    ]
+  ],
+  "task": [
+    [
+      "00:00:05",
+      "Day 1, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:00:08",
+      "Day 1, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:00:10",
+      "Day 1, Night",
+      "Seer choose one player to inspect"
+    ],
+    [
+      "00:10:30",
+      "Day 2, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:10:35",
+      "Day 2, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:10:40",
+      "Day 2, Night",
+      "Seer choose one player to inspect"
+    ]
+  ],
+  "game_state": {
+    "roles": {
+      "1": "Villager",
+      "2": "Werewolf",
+      "3": "Seer",
+      "4": "Villager",
+      "5": "Villager",
+      "6": "Doctor"
+    },
+    "player_id": [
+      "syn_g310_p1",
+      "syn_g310_p2",
+      "syn_g310_p3",
+      "syn_g310_p4",
+      "syn_g310_p5",
+      "syn_g310_p6"
+    ],
+    "final": {
+      "1": "killed",
+      "2": "exiled",
+      "3": "in_game",
+      "4": "in_game",
+      "6": "killed"
+    },
+    "Game Result": "The good side wins",
+    "Day 1 Night": {
+      "Death Message": [
+        1
+      ],
+      "Werewolf": 1,
+      "Seer": 2,
+      "Witch antidote": -1
+    },
+    "Day 1 Daytime": {
+      "Voting Pattern": {
+        "1": "2",
+        "2": "4",
+        "3": "2",
+        "4": "2",
+        "5": "2",
+        "6": "2"
+      },
+      "Voting Result": 2
+    },
+    "Day 2 Night": {
+      "Death Message": [
+        6
+      ],
+      "Werewolf": 6,
+      "Seer": -1,
+      "Witch antidote": -1
+    },
+    "Day 2 Daytime": {
+      "Voting Pattern": {
+        "3": "6",
+        "4": "4",
+        "5": "4"
+      },
+      "Voting Result": 4
+    }
+  },
+  "task_time": {
+    "Day 1 Night - Werewolves act": [
+      5,
+      35
+    ],
+    "Day 1 Night - Doctor protects": [
+      8,
+      18
+    ],
+    "Day 1 Night - Seer inspects": [
+      10,
+      20
+    ],
+    "Day 1 Daytime - Debate": [
+      40,
+      450
+    ],
+    "Day 1 Daytime - Voting": [
+      450,
+      480
+    ],
+    "Day 2 Night - Werewolves act": [
+      630,
+      660
+    ],
+    "Day 2 Night - Doctor protects": [
+      660,
+      670
+    ],
+    "Day 2 Night - Seer inspects": [
+      670,
+      680
+    ],
+    "Day 2 Daytime - Debate": [
+      685,
+      930
+    ],
+    "Day 2 Daytime - Voting": [
+      930,
+      950
+    ]
+  },
+  "audio": {
+    "Day 1 Daytime - [1] is speaking": {
+      "duration": 31.9,
+      "rms": 0.024,
+      "text": "Lumen points out that Xander voted late and quietly yesterday.",
+      "summary": "Lumen expresses distrust toward Xander.",
+      "format": "{\"claims\": [\"Xander feels off\"], \"accuses\": [\"Xander\"], \"defends\": [], \"tone\": \"concerned\"}"
+    },
+    "Day 1 Daytime - [2] is speaking": {
+      "duration": 28.4,
+      "rms": 0.025,
+      "text": "Xander stresses they pushed the village toward a correct vote yesterday.",
+      "summary": "Xander defends themselves from suspicion.",
+      "format": "{\"claims\": [\"Innocent\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"defensive\"}"
+    },
+    "Day 1 Daytime - [3] is speaking": {
+      "duration": 33.0,
+      "rms": 0.025,
+      "text": "Claiming seer: Xander did not ping as a villager when I scanned them.",
+      "summary": "Ivory reveals as seer and claims Xander is a werewolf.",
+      "format": "{\"claims\": [\"Seer\", \"Xander is a werewolf\"], \"accuses\": [\"Xander\"], \"defends\": [], \"tone\": \"assertive\"}"
+    },
+    "Day 1 Daytime - [6] is speaking": {
+      "duration": 34.7,
+      "rms": 0.031,
+      "text": "Trust me, I patched up Lumen after a clear attack. We should coordinate our votes.",
+      "summary": "Olive claims to be the medic and says they protected Lumen.",
+      "format": "{\"claims\": [\"Doctor\", \"Protected Lumen\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"earnest\"}"
+    },
+    "Day 2 Daytime - [3] is speaking": {
+      "duration": 31.3,
+      "rms": 0.034,
+      "text": "I survived an attack. Watch Edison and Xander.",
+      "summary": "Ivory warns that players Edison and Xander remain suspicious.",
+      "format": "{\"claims\": [\"Attacked at night\"], \"accuses\": [\"Edison\", \"Xander\"], \"defends\": [\"Self\"], \"tone\": \"urgent\"}"
+    },
+    "Day 2 Daytime - [5] is speaking": {
+      "duration": 27.6,
+      "rms": 0.029,
+      "text": "We need to resolve Umber today before momentum swings.",
+      "summary": "Edison pushes to eliminate Umber.",
+      "format": "{\"claims\": [\"Stay focused\"], \"accuses\": [\"Umber\"], \"defends\": [], \"tone\": \"resolute\"}"
+    }
+  },
+  "video": {
+    "time": 950.0,
+    "fps": 10.0,
+    "width": 720,
+    "height": 1280
+  },
+  "origin": "synthetic_chatgpt_game310.json"
+}

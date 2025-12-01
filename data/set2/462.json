@@ -1,0 +1,241 @@
+{
+  "judge": [
+    [
+      "00:00:01",
+      "Game Preparation - Judge - The game has started. Players, confirm your identities."
+    ],
+    [
+      "00:00:05",
+      "Day 1,Night - Judge - Night has fallen, werewolves please choose a target."
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:00:40",
+      "Day 1,Daytime - Judge - Those who died last night are [4]"
+    ],
+    [
+      "00:08:10",
+      "Day 1,Daytime - Judge - [2] was voted out"
+    ],
+    [
+      "00:08:15",
+      "Day 1,Daytime - Judge - Starting from [2], please give the last words"
+    ],
+    [
+      "00:10:30",
+      "Day 2,Night - Judge - Night has fallen, special roles please act"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Daybreak has come"
+    ],
+    [
+      "00:11:15",
+      "Day 2,Daytime - Judge - Those who died last night are [6]"
+    ],
+    [
+      "00:15:45",
+      "Day 2,Daytime - Judge - [5] was voted out"
+    ],
+    [
+      "00:17:45",
+      "End - Judge - Congratulations villagers, the werewolves have been eliminated"
+    ]
+  ],
+  "task": [
+    [
+      "00:00:05",
+      "Day 1, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:00:08",
+      "Day 1, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:00:10",
+      "Day 1, Night",
+      "Seer choose one player to inspect"
+    ],
+    [
+      "00:10:30",
+      "Day 2, Night",
+      "Werewolves decide on a victim"
+    ],
+    [
+      "00:10:35",
+      "Day 2, Night",
+      "Doctor choose one player to protect"
+    ],
+    [
+      "00:10:40",
+      "Day 2, Night",
+      "Seer choose one player to inspect"
+    ]
+  ],
+  "game_state": {
+    "roles": {
+      "1": "Villager",
+      "2": "Werewolf",
+      "3": "Seer",
+      "4": "Villager",
+      "5": "Villager",
+      "6": "Doctor"
+    },
+    "player_id": [
+      "syn_g462_p1",
+      "syn_g462_p2",
+      "syn_g462_p3",
+      "syn_g462_p4",
+      "syn_g462_p5",
+      "syn_g462_p6"
+    ],
+    "final": {
+      "1": "in_game",
+      "2": "exiled",
+      "3": "in_game",
+      "4": "killed",
+      "6": "killed"
+    },
+    "Game Result": "The good side wins",
+    "Day 1 Night": {
+      "Death Message": [
+        4
+      ],
+      "Werewolf": 4,
+      "Seer": 2,
+      "Witch antidote": -1
+    },
+    "Day 1 Daytime": {
+      "Voting Pattern": {
+        "1": "2",
+        "2": "6",
+        "3": "2",
+        "4": "2",
+        "5": "2",
+        "6": "2"
+      },
+      "Voting Result": 2
+    },
+    "Day 2 Night": {
+      "Death Message": [
+        6
+      ],
+      "Werewolf": 6,
+      "Seer": -1,
+      "Witch antidote": -1
+    },
+    "Day 2 Daytime": {
+      "Voting Pattern": {
+        "1": "5",
+        "3": "5",
+        "5": "5"
+      },
+      "Voting Result": 5
+    }
+  },
+  "task_time": {
+    "Day 1 Night - Werewolves act": [
+      5,
+      35
+    ],
+    "Day 1 Night - Doctor protects": [
+      8,
+      18
+    ],
+    "Day 1 Night - Seer inspects": [
+      10,
+      20
+    ],
+    "Day 1 Daytime - Debate": [
+      40,
+      450
+    ],
+    "Day 1 Daytime - Voting": [
+      450,
+      480
+    ],
+    "Day 2 Night - Werewolves act": [
+      630,
+      660
+    ],
+    "Day 2 Night - Doctor protects": [
+      660,
+      670
+    ],
+    "Day 2 Night - Seer inspects": [
+      670,
+      680
+    ],
+    "Day 2 Daytime - Debate": [
+      685,
+      930
+    ],
+    "Day 2 Daytime - Voting": [
+      930,
+      950
+    ]
+  },
+  "audio": {
+    "Day 1 Daytime - [1] is speaking": {
+      "duration": 23.3,
+      "rms": 0.031,
+      "text": "Quinn believes Xander keeps steering the talk away from real leads.",
+      "summary": "Quinn expresses distrust toward Xander.",
+      "format": "{\"claims\": [\"Xander feels off\"], \"accuses\": [\"Xander\"], \"defends\": [], \"tone\": \"concerned\"}"
+    },
+    "Day 1 Daytime - [2] is speaking": {
+      "duration": 20.7,
+      "rms": 0.034,
+      "text": "Xander stresses they pushed the village toward a correct vote yesterday.",
+      "summary": "Xander defends themselves from suspicion.",
+      "format": "{\"claims\": [\"Innocent\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"defensive\"}"
+    },
+    "Day 1 Daytime - [3] is speaking": {
+      "duration": 23.1,
+      "rms": 0.024,
+      "text": "I am the seer. I checked Xander and saw a crimson aura.",
+      "summary": "Lumen reveals as seer and claims Xander is a werewolf.",
+      "format": "{\"claims\": [\"Seer\", \"Xander is a werewolf\"], \"accuses\": [\"Xander\"], \"defends\": [], \"tone\": \"assertive\"}"
+    },
+    "Day 1 Daytime - [6] is speaking": {
+      "duration": 21.3,
+      "rms": 0.025,
+      "text": "I am the medic. I shielded Quinn last night. We should coordinate our votes.",
+      "summary": "Amber claims to be the medic and says they protected Quinn.",
+      "format": "{\"claims\": [\"Doctor\", \"Protected Quinn\"], \"accuses\": [], \"defends\": [\"Self\"], \"tone\": \"earnest\"}"
+    },
+    "Day 2 Daytime - [1] is speaking": {
+      "duration": 21.8,
+      "rms": 0.032,
+      "text": "We need to resolve Fable today before momentum swings.",
+      "summary": "Quinn pushes to eliminate Fable.",
+      "format": "{\"claims\": [\"Stay focused\"], \"accuses\": [\"Fable\"], \"defends\": [], \"tone\": \"resolute\"}"
+    },
+    "Day 2 Daytime - [3] is speaking": {
+      "duration": 35.5,
+      "rms": 0.032,
+      "text": "I survived an attack. Watch Fable and Xander.",
+      "summary": "Lumen warns that players Fable and Xander remain suspicious.",
+      "format": "{\"claims\": [\"Attacked at night\"], \"accuses\": [\"Fable\", \"Xander\"], \"defends\": [\"Self\"], \"tone\": \"urgent\"}"
+    },
+    "Day 2 Daytime - [5] is speaking": {
+      "duration": 30.1,
+      "rms": 0.025,
+      "text": "We need to resolve Fable today before momentum swings.",
+      "summary": "Fable pushes to eliminate Fable.",
+      "format": "{\"claims\": [\"Stay focused\"], \"accuses\": [\"Fable\"], \"defends\": [], \"tone\": \"resolute\"}"
+    }
+  },
+  "video": {
+    "time": 950.0,
+    "fps": 10.0,
+    "width": 720,
+    "height": 1280
+  },
+  "origin": "synthetic_chatgpt_game462.json"
+}
