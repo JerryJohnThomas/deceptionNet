@@ -28,11 +28,7 @@ Our key insight: **treating LLMs as frozen feature extractors** avoids training 
 
 ## Architecture
 
-```
-Raw Text → Listener → Featurizer → BeliefNet → StateBuilder → Policy Heads → Presenter → Text Output
-            ↑ (Optional LLM)                      ↓ (GNN + GRU)      ↓ (Multi-Head)
-```
-
+![](./arch.jpg)
 ### Components
 
 1. **Listener** (Dual-mode)
@@ -68,13 +64,7 @@ conda create -n deceptionnet python=3.11
 conda activate deceptionnet
 
 # Install dependencies
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-pip install textarena>=0.7.2
-pip install transformers accelerate
-
-# Verify installation
-python -c "import torch; print('CUDA available:', torch.cuda.is_available())"
-python -c "import textarena; print('TextArena version:', textarena.__version__)"
+pip install -r requirements.txt
 ```
 
 ---
